@@ -27,8 +27,7 @@ function viewCart() {
 }
 
 function total() {
-  var sum = sumUpPrices();
-  return sum;
+
 }
 
 function removeFromCart(item) {
