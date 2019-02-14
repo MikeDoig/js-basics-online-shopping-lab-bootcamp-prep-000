@@ -26,8 +26,9 @@ function fullCart() {
   }
   else if (getCart.length > 1) {
     var otherThingsInCart = ' ';
-    for (let i=1, )
-    return thingsInCart +
+    for (let i=1; i < getCart.length - 1, i++) {
+    return otherThingsInCart +
+  }
   }
 }
 }
