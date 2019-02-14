@@ -12,7 +12,7 @@ function creatPrice(itemPrice) {
   
 }
 function createCartItem(itemName) {
-  return {itemName:itemName, itemPrice:Math.random(1,100)};
+  return {itemName:itemName, itemPrice:Math.floor(Math.random()*100)};
 }
 
 function addToCart(item) {
