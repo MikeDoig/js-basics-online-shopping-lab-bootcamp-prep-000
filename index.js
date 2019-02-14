@@ -20,7 +20,7 @@ getCart().push(thing);
   return `${thing.itemName} has been added to your cart.`;
 }
 function fullCart() {
-  
+  var fullCart = 
 }
 function viewCart() {
   if (cart.length === 0) {
