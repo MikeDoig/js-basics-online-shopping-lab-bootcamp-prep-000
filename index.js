@@ -25,9 +25,7 @@ function viewCart() {
     return 'Your shopping cart is empty.';
   }
   else {
-    const contents = [];
-    for (let i=0, l=cart.length; i<l; i++){
-    contents.push(`${i + 1}. ${cart[i]}`);
+    
   }
   return `In your cart, you have ${itemName.join('at $')}.`;
   }
