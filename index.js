@@ -14,9 +14,9 @@ function createCartItem(itemName) {
 }
 
 function addToCart(item) {
-var thing = createCartItem(item);
-getCart().push(thing);
-  return `${thing.itemName} has been added to your cart.`;
+var item = createCartItem(item);
+getCart().push(item);
+  return `${item.itemName} has been added to your cart.`;
 }
 
 function viewCart() {
