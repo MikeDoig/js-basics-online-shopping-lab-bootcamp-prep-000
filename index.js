@@ -35,11 +35,12 @@ function fullCart() {
 }
 
 function viewCart() {
-  if (cart.length === 0) {
-    return 'Your shopping cart is empty.';
-  }
-  else {
-    return fullCart();
+  getCart().length === 0 ?
+  // if (cart.length === 0) {
+  //   return 'Your shopping cart is empty.';
+  // }
+  // else {
+  //   return fullCart();
   }
 }
   
