@@ -35,13 +35,13 @@ function fullCart() {
 }
 
 function viewCart() {
-  getCart().length === 0 ? 'Your shopping cart is empty.' : 
+  getCart().length === 0 ? 'Your shopping cart is empty.' : fullCart();
   // if (cart.length === 0) {
   //   return 'Your shopping cart is empty.';
   // }
   // else {
   //   return fullCart();
-  }
+ // }
 }
   
   // else if (cart.length > 1) {
