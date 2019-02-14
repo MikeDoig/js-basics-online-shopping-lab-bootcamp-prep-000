@@ -38,7 +38,7 @@ function placeOrder(cardNumber) {
 
 }
 
-function createCartItem(itemName) {
+function createCartItem(item) {
   return {itemName:item, itemPrice:Math.random(1,100);
   }
 }
