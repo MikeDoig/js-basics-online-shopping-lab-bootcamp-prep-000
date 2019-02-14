@@ -39,5 +39,6 @@ function placeOrder(cardNumber) {
 }
 
 function createCartItem(itemName) {
-  i
+  itemName:item;
+  
 }
