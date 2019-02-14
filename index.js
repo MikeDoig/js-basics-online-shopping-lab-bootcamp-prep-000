@@ -25,7 +25,7 @@ function fullCart() {
     return thingsInCart + `${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`;
   }
   else if (getCart.length > 1) {
-    return
+    return thingsInCart +
   }
 }
 function viewCart() {
