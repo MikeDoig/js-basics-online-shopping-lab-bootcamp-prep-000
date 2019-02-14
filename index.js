@@ -8,7 +8,9 @@ function setCart(c) {
   cart = c;
   return cart;
 }
-
+function createCartItem(item) {
+  return {item:itemName, itemPrice:Math.random(1,100)};
+}
 
 function addToCart(item) {
   
@@ -42,10 +44,6 @@ function placeOrder(cardNumber) {
 
 }
 
-function createCartItem(item) {
-  return {item:itemName, itemPrice:Math.random(1,100)};
-}
-
-function createCartItem(item) {
-  return {'item':itemName, 'itemPrice':Math.random(1,100)};
-}
+// function createCartItem(item) {
+//   return {item:itemName, itemPrice:Math.random(1,100)};
+// }
