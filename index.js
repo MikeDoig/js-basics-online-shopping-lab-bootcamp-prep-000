@@ -19,16 +19,17 @@ var thing = createCartItemAndPrice(item);
 getCart().push(thing);
   return `${thing.itemName} has been added to your cart.`;
 }
-
+function fullCart() {
+  
+}
 function viewCart() {
   if (cart.length === 0) {
     return 'Your shopping cart is empty.';
   }
-  else if (cart.length === 1) {
-    var thing = createCartItemAndPrice();
-    getCart().pop();
-      return `In your cart, you have ${thing.itemName} at $${thing.itemPrice}.`;
+  else {
+    return fullCart();
   }
+  
   // else if (cart.length > 1) {
   //   return`In your cart, you have ${thing.itemName[i]} at $${thing.itemPrice[i]}, and ${thing.itemName[i + 1]} at $${thing.itemPrice[i + 1]}.`;
   // }
