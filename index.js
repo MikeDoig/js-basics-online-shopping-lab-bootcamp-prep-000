@@ -9,7 +9,7 @@ function setCart(c) {
   return cart;
 }
 
-function createCartItem(item) {
+function createCartItem(itemName) {
   return {itemName:itemName, itemPrice:Math.random(1,100)};
 }
 
