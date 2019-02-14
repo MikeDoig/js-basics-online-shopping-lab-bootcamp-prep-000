@@ -31,6 +31,7 @@ function fullCart() {
   }
     thingsInCart = thingsInCart + `${otherThingsInCart}, and ${getCart()[getCart().length - 1].itemName} at $${getCart()[getCart().length - 1].itemPrice}`;
   }
+  return ${thingsInCart
 }
 
 function viewCart() {
