@@ -21,8 +21,6 @@ getCart().push(thing);
 }
 
 function viewCart() {
-  var thing = createCartItemAndPrice();
-  getCart().push(thing);
   if (cart.length === 0) {
     return 'Your shopping cart is empty.';
   }
@@ -33,8 +31,6 @@ function viewCart() {
     return`In your cart, you have ${thing.itemName[i]} at $${thing.itemPrice[i]}, and ${thing.itemName[i + 1]} at $${thing.itemPrice[i + 1]}.`;
   }
   
-  // return `In your cart, you have ${itemName.join('at $')}.`;
-  //}
 }
 
 function total() {
