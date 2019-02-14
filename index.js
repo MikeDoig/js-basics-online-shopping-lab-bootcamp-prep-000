@@ -29,7 +29,7 @@ function fullCart() {
     for (let i=1; i < getCart().length - 1; i++) {
     otherThingsInCart = otherThingsInCart + `, ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`;
   }
-    return thingsInCart + `${otherThingsInCart}, and ${getCart()[getCart().length - 1].itemName} at $${getCart()[getCart().length - 1].itemPrice}.`;
+    thingsInCart = thingsInCart + `${otherThingsInCart}, and ${getCart()[getCart().length - 1].itemName} at $${getCart()[getCart().length - 1].itemPrice}.`;
   }
 }
 
