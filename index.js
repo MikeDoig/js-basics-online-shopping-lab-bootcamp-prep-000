@@ -25,7 +25,7 @@ function viewCart(item) {
     return 'Your shopping cart is empty.';
   }
   else if (cart.length === 1) {
-    var thing = createCartItemAndPrice()
+    var thing = createCartItemAndPrice(item)
       return `In your cart, you have ${thing.itemName} at $${thing.itemPrice}.`;
   }
   // else if (cart.length > 1) {
