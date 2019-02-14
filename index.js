@@ -28,9 +28,9 @@ function viewCart() {
     var thing = createCartItemAndPrice()
       return `In your cart, you have ${thing.itemName} at $${thing.itemPrice}.`;
   }
-  else if (cart.length > 1) {
-    return`In your cart, you have ${thing.itemName[i]} at $${thing.itemPrice[i]}, and ${thing.itemName[i + 1]} at $${thing.itemPrice[i + 1]}.`;
-  }
+  // else if (cart.length > 1) {
+  //   return`In your cart, you have ${thing.itemName[i]} at $${thing.itemPrice[i]}, and ${thing.itemName[i + 1]} at $${thing.itemPrice[i + 1]}.`;
+  // }
   
 }
 
