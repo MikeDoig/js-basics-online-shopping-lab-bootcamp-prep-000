@@ -37,3 +37,7 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
 
 }
+
+function createCartItem(itemName) {
+  i
+}
