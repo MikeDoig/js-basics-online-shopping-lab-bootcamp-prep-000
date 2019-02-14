@@ -10,14 +10,13 @@ function setCart(c) {
 }
 
 function createCartItem(item) {
-  return {item:itemName, itemPrice:Math.random(1,100)};
+  return {itemName:itemName, itemPrice:Math.random(1,100)};
 }
 
 function addToCart(item) {
-  
-var item = createCartItem(item);
+var thing = createCartItem(item);
 getCart().push(item);
-  return `${item.itemName} has been added to your cart.`;
+  return `${thing.itemName} has been added to your cart.`;
 }
 
 function viewCart() {
