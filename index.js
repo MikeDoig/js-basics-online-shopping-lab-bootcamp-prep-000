@@ -35,7 +35,7 @@ function fullCart() {
 }
 
 function viewCart() {
-  getCart().length === 0 ?
+  getCart().length === 0 ? 'Your shopping cart is empty.' : 
   // if (cart.length === 0) {
   //   return 'Your shopping cart is empty.';
   // }
