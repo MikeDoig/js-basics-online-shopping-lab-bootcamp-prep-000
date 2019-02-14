@@ -25,14 +25,14 @@ function fullCart() {
     return thingsInCart + `${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`;
   }
   else if (getCart.length > 1) {
-    var otherThingsInCart = ' ';
+    var otherThingsInCart = ', ';
     for (let i=1; i < getCart.length - 1; i++) {
-    return otherThingsInCart + `${getCart[i].itemName} at $${getCart[i].itemPrice},`
+    otherThingsInCart + `${getCart[i].itemName} at $${getCart[i].itemPrice}`;
   }
-  return
+  return thingsInCart + otherThingsInCart;
   }
 }
-}
+
 function viewCart() {
   if (cart.length === 0) {
     return 'Your shopping cart is empty.';
