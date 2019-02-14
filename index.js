@@ -25,8 +25,10 @@ function fullCart() {
     return thingsInCart + `${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`;
   }
   else if (getCart.length > 1) {
+    var otherThingsInCart = ' ';
     return thingsInCart +
   }
+}
 }
 function viewCart() {
   if (cart.length === 0) {
