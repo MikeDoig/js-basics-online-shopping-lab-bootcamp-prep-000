@@ -27,7 +27,7 @@ function fullCart() {
   else if (getCart().length > 1) {
     var otherThingsInCart = ' ';
     for (let i=1; i < getCart().length - 1; i++) {
-    otherThingsInCart + `${getCart()[i].itemName} at $${getCart()[i].itemPrice}`;
+    otherThingsInCart + `, ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`;
   }
    thingsInCart + `${otherThingsInCart}, and ${getCart()[getCart().length - 1].itemName} at $${getCart()[getCart().length - 1].itemPrice}.`;
   }
