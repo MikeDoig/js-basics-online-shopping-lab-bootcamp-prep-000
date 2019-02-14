@@ -26,7 +26,7 @@ function viewCart() {
   }
   else if (cart.length === 1) {
     var thing = createCartItemAndPrice();
-    getCart().push();
+    getCart().push(thing);
       return `In your cart, you have ${thing.itemName} at $${thing.itemPrice}.`;
   }
   // else if (cart.length > 1) {
