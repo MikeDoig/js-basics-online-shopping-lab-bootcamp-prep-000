@@ -22,7 +22,7 @@ getCart().push(thing);
 function fullCart() {
   var thingsInCart = 'In your cart, you have ';
   if (getCart().length === 1) {
-    return thingsInCart + `${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`;
+    thingsInCart + `${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`;
   }
   else if (getCart().length > 1) {
     var otherThingsInCart = ' ';
