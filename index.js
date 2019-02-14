@@ -38,7 +38,6 @@ function viewCart() {
     return 'Your shopping cart is empty.';
   }
   else {
-    fullCart();
     return fullCart();
   }
 }
