@@ -20,12 +20,12 @@ getCart().push(thing);
   return `${thing.itemName} has been added to your cart.`;
 }
 
-function viewCart() {
+function viewCart(item) {
   if (cart.length === 0) {
     return 'Your shopping cart is empty.';
   }
   else if (cart.length === 1) {
-    var thing = createCartItemAndPrice();
+    var thing = createCartItemAndPrice(item);
     getCart();
       return `In your cart, you have ${thing.itemName} at $${thing.itemPrice}.`;
   }
