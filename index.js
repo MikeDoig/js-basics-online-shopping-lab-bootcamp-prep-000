@@ -31,11 +31,11 @@ getCart().push(thing);
       return `In your cart, you have ${thing.itemName} at $${thing.itemPrice}.`;
   }
   else if (cart.length > 1) {
-    return`
+    return`In your cart, you have ${thing.itemName[i]} at $${thing.itemPrice[i]}, and ${thing.itemName[i + 1]} at $${thing.itemPrice[i + 1]}.`;
   }
   
-  return `In your cart, you have ${itemName.join('at $')}.`;
-  }
+  // return `In your cart, you have ${itemName.join('at $')}.`;
+  //}
 }
 
 function total() {
