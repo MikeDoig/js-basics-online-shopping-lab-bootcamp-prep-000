@@ -23,7 +23,6 @@ getCart().push(thing);
 function viewCart() {
   var thing = createCartItemAndPrice();
   getCart().push(thing);
-  // return `${thing.itemName} has been added to your cart.`;
   if (cart.length === 0) {
     return 'Your shopping cart is empty.';
   }
