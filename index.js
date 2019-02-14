@@ -13,6 +13,7 @@ function addToCart(item) {
   function createCartItem(item) {
   return {item:itemName, itemPrice:Math.random(1,100)};
 }
+var item = createCartItem
   cart = new Object ({itemName: 'name of item', itemPrice: 'price of item'});
 }
 
