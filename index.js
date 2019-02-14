@@ -11,12 +11,11 @@ function setCart(c) {
 function creatPrice(itemPrice) {
   
 }
-function createCartItem(itemName) {
+function createCartItemAndPrice(itemName) {
   return {itemName:itemName, itemPrice:Math.floor(Math.random()*100)};
 }
-
 function addToCart(item) {
-var thing = createCartItem(item);
+var thing = createCartItemAndPrice(item);
 getCart().push(thing);
   return `${thing.itemName} has been added to your cart.`;
 }
@@ -30,7 +29,7 @@ function viewCart() {
     for (let i=0, l=cart.length; i<l; i++){
     contents.push(`${i + 1}. ${cart[i]}`);
   }
-  return `In your cart, you have ${contents.join('at $')}.`;
+  return `In your cart, you have ${itemName.join('at $')}.`;
   }
 }
 
