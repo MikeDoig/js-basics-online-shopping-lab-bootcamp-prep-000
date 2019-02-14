@@ -10,6 +10,9 @@ function setCart(c) {
 }
 
 function addToCart(item) {
+  function createCartItem(item) {
+  return {item:itemName, itemPrice:Math.random(1,100)};
+}
   cart = new Object ({itemName: 'name of item', itemPrice: 'price of item'});
 }
 
@@ -39,6 +42,5 @@ function placeOrder(cardNumber) {
 }
 
 function createCartItem(item) {
-  return {itemName:item, itemPrice:Math.random(1,100);
-  }
+  return {item:itemName, itemPrice:Math.random(1,100)};
 }
