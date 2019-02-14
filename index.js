@@ -14,7 +14,7 @@ function addToCart(item) {
   return {item:itemName, itemPrice:Math.random(1,100)};
 }
 var item = createCartItem(item);
-getCart.push(item);
+getCart().push(item);
   return ({itemName: 'name of item', itemPrice: 'price of item'});
 }
 
