@@ -21,7 +21,7 @@ getCart().push(thing);
 }
 function fullCart() {
   var thingsInCart = 'In your cart, you have ';
-  
+  if (getCart.length)
 }
 function viewCart() {
   if (cart.length === 0) {
