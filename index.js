@@ -8,11 +8,12 @@ function setCart(c) {
   cart = c;
   return cart;
 }
-
-function addToCart(item) {
-  function createCartItem(item) {
+function createCartItem(item) {
   return {item:itemName, itemPrice:Math.random(1,100)};
 }
+
+function addToCart(item) {
+  
 var item = createCartItem(item);
 getCart().push(item);
   return `${item.itemName} has been added to your cart.`;
