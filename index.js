@@ -75,7 +75,7 @@ function total() {
 // }
 
 function removeFromCart(item) {
-  function searchCartForItemToRemove(item) {
+  function searchCartForItemToRemove(itemName) {
   var searchResult
   for (var i=0; i<getCart().length; i++) {
     if (getCart()[i].itemName === itemName) {searchResult = getCart()[i]}
