@@ -80,7 +80,6 @@ function removeItem(itemToRemove) {
 }
   var itemToRemove = searchCart(itemName)
   if (itemToRemove == removeItem(itemToRemove)){}
-  
   return 'That item is not in your cart.'
 }
 
