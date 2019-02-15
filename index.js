@@ -93,9 +93,6 @@ function removeItem(item) {
   if (item == removeItem(item)){
   return item
   }
-  else {
-    return notifyUserThereIsNoItemToRemove()
-  }
   return item ? removeItem(item) : notifyUserThereIsNoItemToRemove()
 }
 function notifyUserThereIsNoItemToRemove() {
