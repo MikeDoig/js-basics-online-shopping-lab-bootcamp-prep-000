@@ -63,9 +63,9 @@ function total() {
 //   var search;
 //   for (let i=0; i<getCart().length; i++) {
 //     if (getCart()[i].item == item) {
-//     search = getCart()[i];
+//     search = cart.indexOf(getCart()[i]);
+//     return getCart().splice(search,1);
 //   }
-//    return search;
 //     else {
 //     search = 'That item is not in your cart.';
 //     return search;
@@ -94,9 +94,14 @@ function removeItem(item) {
   return item
   }
   else {
-  return 'That item is not in your cart.'
+    return notifyUserThereIsNoItemToRemove()
   }
+  return item ? removeItem(item) : notifyUserThereIsNoItemToRemove()
 }
+function notifyUserThereIsNoItemToRemove() {
+  return 'That item is not in your cart.'
+}
+
 
 function placeOrder(cardNumber) {
 
