@@ -6,9 +6,7 @@ function setCart(c) {
   cart = c;
   return cart;
 }
-function creatPrice(itemPrice) {
-  
-}
+
 function createCartItemAndPrice(itemName) {
   return {itemName:itemName, itemPrice:Math.floor(Math.random()*100)};
 }
