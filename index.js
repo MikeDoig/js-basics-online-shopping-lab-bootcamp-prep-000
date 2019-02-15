@@ -42,7 +42,7 @@ function viewCart() {
 function addingPrices() {
   var sum = 0;
   for (let i=0; i < getCart().length; i++) {
-    sum = sum + `${getCart()[i].itemPrice}`;
+    sum = sum + getCart()[i].itemPrice;
   }
   return sum;
 }
