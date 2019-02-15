@@ -58,38 +58,39 @@ function total() {
 //   }
 //   return search;
 // }
-function removeFromCart(item) {
-  function searchCart(item) {
-  var search;
-  for (let i=0; i<getCart().length; i++) {
-    if (getCart()[i].item == item) {
-    search = cart.indexOf(getCart()[i]);
-    return getCart().splice(search,1);
-  }
-    else {
-    search = 'That item is not in your cart.';
-    return search;
-    }
-  }
-  }
-}
+// function removeFromCart(item) {
+//   function searchCart(item) {
+//   var search;
+//   for (let i=0; i<getCart().length; i++) {
+//     if (getCart()[i].item == item) {
+//     search = cart.indexOf(getCart()[i]);
+//     return getCart().splice(search,1);
+//   }
+//     else {
+//     search = 'That item is not in your cart.';
+//     return search;
+//     }
+//   }
+//   }
+// }
 
 
 
 function removeFromCart(itemName) {
-  function searchCartForItemToRemove(itemName) {
-  var searchResult
+  function searchCart(itemName) {
+  var search
   for (var i=0; i<getCart().length; i++) {
-    if (getCart()[i].itemName === itemName) {searchResult = getCart()[i]}
+    if (getCart()[i].itemName === itemName) 
+    {search = getCart()[i]}
   }
-  return searchResult
+  return search
 }
-function removeItemFromCart(itemToRemove) {
-  var indexOfItemToRemove = cart.indexOf(itemToRemove)
-  getCart().splice(indexOfItemToRemove,1)
+function removeItem(item) {
+  var indexOfItem = cart.indexOf(item)
+  getCart().splice(indexOfItem,1)
 }
-  var itemToRemove = searchCartForItemToRemove(itemName)
-  return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
+  var item = searchCart(itemName)
+  return item ? removeItem(item) : notifyUserThereIsNoItemToRemove()
 }
 function notifyUserThereIsNoItemToRemove() {
   return 'That item is not in your cart.'
