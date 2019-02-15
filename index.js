@@ -71,8 +71,8 @@ function removeFromCart(itemName) {
   }
   return search;
 }
-function removeItem(itemToRemove) {
-  var id = cart.indexOf(itemToRemove)
+function removeItem(removal) {
+  var id = cart.indexOf(removal)
   getCart().splice(id,1)
 }
   var itemToRemove = searchCart(itemName)
