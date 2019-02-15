@@ -59,18 +59,18 @@ function total() {
 //   return search;
 // }
 function removeFromCart(item) {
-  function searchCart(itemName) {
+  function searchCart(item) {
   var search;
   for (let i=0; i<getCart().length; i++) {
-    if (getCart()[i].itemName == itemName) {
+    if (getCart()[i].item == item) {
     search = getCart().splice(cart.indexOf(getCart()[i]),1);
   }
     else {
     search = 'That item is not in your cart.';
     }
   }
+  }
   return search;
-}
 }
 
 
