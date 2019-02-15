@@ -69,7 +69,7 @@ function removeItem(removal) {
 }
 
 function placeOrder(cardNumber) {
-
+if cardNumber 
 }
 
 
