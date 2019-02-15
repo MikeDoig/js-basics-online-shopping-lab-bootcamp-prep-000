@@ -14,9 +14,9 @@ function createItemAndPrice(itemName) {
 }
 
 function addToCart(item) {
-var thing = createItemAndPrice(item);
-getCart().push(thing);
-  return `${thing.itemName} has been added to your cart.`;
+var newItem = createItemAndPrice(item);
+getCart().push(newItem);
+  return `${newItem.itemName} has been added to your cart.`;
 }
 
 function fullCart() {
@@ -60,17 +60,13 @@ function removeFromCart(itemName) {
   return search;
 }
 function removeItem(removal) {
-  var id = cart.indexOf(removal)
-  getCart().splice(id,1)
+  var id = cart.indexOf(removal);
+  getCart().splice(id,1);
 }
-  var item = searchCart(itemName)
+  var item = searchCart(itemName);
   if (item == removeItem(item)){}
-  return 'That item is not in your cart.'
+  return 'That item is not in your cart.';
 }
-
-
-
-
 
 function placeOrder(cardNumber) {
 
