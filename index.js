@@ -42,13 +42,11 @@ function viewCart() {
 function addingPrices() {
   var sum = 0;
   for (let i=0; i < getCart().length; i++) {
-    sum = sum
+    sum = sum + `${getCart()[i].itemPrice}`;
   }
 }
-
-
 function total() {
-
+return addingPrices();
 }
 
 function removeFromCart(item) {
