@@ -59,9 +59,10 @@ function total() {
 //   return search;
 // }
 function removeFromCart(item) {
+  function searchCart(itemName) {
   var search;
   for (let i=0; i<getCart().length; i++) {
-    if (getCart()[i].item == item) {
+    if (getCart()[i].itemName == itemName) {
     search = getCart().splice(cart.indexOf(getCart()[i]),1);
   }
     else {
@@ -69,6 +70,7 @@ function removeFromCart(item) {
     }
   }
   return search;
+}
 }
 
 
