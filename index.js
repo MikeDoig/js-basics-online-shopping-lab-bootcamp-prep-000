@@ -39,6 +39,10 @@ function viewCart() {
     return fullCart();
   }
 }
+function addingPrices() {
+  
+}
+
 
 function total() {
 
