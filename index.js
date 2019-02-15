@@ -74,11 +74,11 @@ function total() {
 //   }
 // }
 
-function removeFromCart(item) {
-  function searchCartForItemToRemove(item) {
+function removeFromCart(itemName) {
+  function searchCartForItemToRemove(itemName) {
   var searchResult
   for (var i=0; i<getCart().length; i++) {
-    if (getCart()[i].item === item) {searchResult = getCart()[i]}
+    if (getCart()[i].itemName === itemName) {searchResult = getCart()[i]}
   }
   return searchResult
 }
@@ -89,7 +89,7 @@ function removeItemFromCart(itemToRemove) {
   var indexOfItemToRemove = cart.indexOf(itemToRemove)
   getCart().splice(indexOfItemToRemove,1)
 }
-  var itemToRemove = searchCartForItemToRemove(item)
+  var itemToRemove = searchCartForItemToRemove(itemName)
   return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
 }
 
