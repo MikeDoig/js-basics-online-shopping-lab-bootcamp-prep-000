@@ -74,8 +74,8 @@ function total() {
 //   }
 // }
 
-function removeFromCart(itemName) {
-  function searchCartForItemToRemove(itemName) {
+function removeFromCart(item) {
+  function searchCartForItemToRemove(item) {
   var searchResult
   for (var i=0; i<getCart().length; i++) {
     if (getCart()[i].itemName === itemName) {searchResult = getCart()[i]}
