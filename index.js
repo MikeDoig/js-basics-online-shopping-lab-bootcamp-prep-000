@@ -54,7 +54,7 @@ function total() {
 function removeFromCart(itemName) {
   function searchCart(itemName) {
   var search;
-  for (var i=0; i<getCart().length; i++) {
+  for (let i=0; i<getCart().length; i++) {
     if (getCart()[i].itemName === itemName) {search = getCart()[i]}
   }
   return search;
