@@ -75,7 +75,7 @@ function total() {
 // }
 
 function removeFromCart(item) {
-  function searchCartForItemToRemove(item) {
+  function searchCart(item) {
   var search
   for (var i=0; i<getCart().length; i++) {
     if (getCart()[i].item === item) 
@@ -90,8 +90,9 @@ function removeItemFromCart(itemToRemove) {
   var indexOfItemToRemove = cart.indexOf(itemToRemove)
   getCart().splice(indexOfItemToRemove,1)
 }
-  var itemToRemove = searchCartForItemToRemove(item)
-  return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
+  var itemToRemove = searchCart(item)
+  return 
+  itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
 }
 
 
