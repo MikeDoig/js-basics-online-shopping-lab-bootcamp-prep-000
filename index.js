@@ -75,8 +75,8 @@ function notifyUserThereIsNoItemToRemove() {
   return 'That item is not in your cart.'
 }
 function removeItem(itemToRemove) {
-  var indexOfItemToRemove = cart.indexOf(itemToRemove)
-  getCart().splice(indexOfItemToRemove,1)
+  var id = cart.indexOf(itemToRemove)
+  getCart().splice(id,1)
 }
   var itemToRemove = searchCart(itemName)
   return itemToRemove ? removeItem(itemToRemove) : notifyUserThereIsNoItemToRemove()
