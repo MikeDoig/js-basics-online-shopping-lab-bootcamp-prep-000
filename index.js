@@ -93,7 +93,6 @@ function removeItemFromCart(itemToRemove) {
   var itemToRemove = searchCart(item)
   // return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
   if (itemToRemove == removeItemFromCart(itemToRemove)) {
-    return itemToRemove;
   }
   else {
     return notifyUserThereIsNoItemToRemove()
