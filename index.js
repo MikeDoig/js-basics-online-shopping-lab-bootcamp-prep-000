@@ -78,7 +78,7 @@ function removeFromCart(item) {
   function searchCartForItemToRemove(itemName) {
   var searchResult
   for (var i=0; i<getCart().length; i++) {
-    if (getCart()[i].itemName === item) {searchResult = getCart()[i]}
+    if (getCart()[i].itemName === itemName) {searchResult = getCart()[i]}
   }
   return searchResult
 }
