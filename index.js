@@ -1,20 +1,24 @@
 var cart = [];
+
 function getCart() {
  return cart;
 }
+
 function setCart(c) {
   cart = c;
   return cart;
 }
 
-function createCartItemAndPrice(itemName) {
+function createItemAndPrice(itemName) {
   return {itemName:itemName, itemPrice:Math.floor(Math.random()*100)};
 }
+
 function addToCart(item) {
-var thing = createCartItemAndPrice(item);
+var thing = createItemAndPrice(item);
 getCart().push(thing);
   return `${thing.itemName} has been added to your cart.`;
 }
+
 function fullCart() {
   var thingsInCart = 'In your cart, you have ';
   if (getCart().length >= 1) {
@@ -29,6 +33,7 @@ function fullCart() {
   }
   return `${thingsInCart}.`;
 }
+
 function viewCart() {
   if (cart.length === 0) {
     return 'Your shopping cart is empty.';
@@ -37,6 +42,7 @@ function viewCart() {
     return fullCart();
   }
 }
+
 function total() {
   var sum = 0;
   for (let i=0; i < getCart().length; i++) {
@@ -44,24 +50,6 @@ function total() {
   }
   return sum;
 }
-
-
-
-// function removeFromCart(item) {
-//   function searchCart(item) {
-//   var search;
-//   for (let i=0; i<getCart().length; i++) {
-//     if (getCart()[i].item == item) {
-//     search = cart.indexOf(getCart()[i]);
-//     return getCart().splice(search,1);
-//   }
-//     else {}
-//     search = 'That item is not in your cart.';
-//     return search;
-//     
-//   }
-//   }
-// }
 
 function removeFromCart(itemName) {
   function searchCart(itemName) {
