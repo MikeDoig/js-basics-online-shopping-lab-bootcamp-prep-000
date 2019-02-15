@@ -74,24 +74,8 @@ function total() {
 //   }
 // }
 
-function removeFromCart(item) {
-  function searchCart(item) {
-  var search
-  for (var i=0; i<getCart().length; i++) {
-    if (getCart()[i].item === item) 
-    {search = getCart()[i]}
-  }
-  return search
-}
-function notifyUserThereIsNoItemToRemove() {
-  return 'That item is not in your cart.'
-}
-function removeItemFromCart(itemToRemove) {
-  var indexOfItemToRemove = cart.indexOf(itemToRemove)
-  getCart().splice(indexOfItemToRemove,1)
-}
-  var itemToRemove = searchCart(item)
-  return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
+function removeFromCart(itemName) {
+  
 }
 
 
