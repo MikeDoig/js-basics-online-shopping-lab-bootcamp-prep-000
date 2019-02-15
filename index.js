@@ -74,12 +74,12 @@ function removeFromCart(itemName) {
 function notifyUserThereIsNoItemToRemove() {
   return 'That item is not in your cart.'
 }
-function removeItemFromCart(itemToRemove) {
+function removeItem(itemToRemove) {
   var indexOfItemToRemove = cart.indexOf(itemToRemove)
   getCart().splice(indexOfItemToRemove,1)
 }
   var itemToRemove = searchCart(itemName)
-  return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
+  return itemToRemove ? removeItem(itemToRemove) : notifyUserThereIsNoItemToRemove()
 }
 
 
