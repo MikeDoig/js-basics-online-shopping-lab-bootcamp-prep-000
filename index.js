@@ -63,33 +63,34 @@ function removeFromCart(item) {
   var search;
   for (let i=0; i<getCart().length; i++) {
     if (getCart()[i].item == item) {
-    search = getCart()[i];
+    search = cart.indexOf(getCart()[i]);
+    return getCart().splice(search,1);
   }
     else {
     search = 'That item is not in your cart.';
+    return search;
     }
   }
   }
-  return search;
 }
 
 
 
-function removeFromCart(itemName) {
-  function searchCartForItemToRemove(itemName) {
-  var searchResult
-  for (var i=0; i<getCart().length; i++) {
-    if (getCart()[i].itemName === itemName) {searchResult = getCart()[i]}
-  }
-  return searchResult
-}
-function removeItemFromCart(itemToRemove) {
-  var indexOfItemToRemove = cart.indexOf(itemToRemove)
-  getCart().splice(indexOfItemToRemove,1)
-}
-  var itemToRemove = searchCartForItemToRemove(itemName)
-  return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
-}
+// function removeFromCart(itemName) {
+//   function searchCartForItemToRemove(itemName) {
+//   var searchResult
+//   for (var i=0; i<getCart().length; i++) {
+//     if (getCart()[i].itemName === itemName) {searchResult = getCart()[i]}
+//   }
+//   return searchResult
+// }
+// function removeItemFromCart(itemToRemove) {
+//   var indexOfItemToRemove = cart.indexOf(itemToRemove)
+//   getCart().splice(indexOfItemToRemove,1)
+// }
+//   var itemToRemove = searchCartForItemToRemove(itemName)
+//   return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
+// }
 
 
 function placeOrder(cardNumber) {
