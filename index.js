@@ -40,7 +40,8 @@ function viewCart() {
   }
 }
 function addingPrices() {
-  
+  var sum = ();
+  for
 }
 
 
