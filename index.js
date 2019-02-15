@@ -74,7 +74,9 @@ function total() {
 //   }
 // }
 
-
+function removeFromCart(item) {
+  
+}
 
 
 
