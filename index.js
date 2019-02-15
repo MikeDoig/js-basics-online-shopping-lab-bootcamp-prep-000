@@ -76,28 +76,7 @@ function total() {
 
 
 
-function removeFromCart(itemName) {
-  function searchCart(itemName) {
-  var search
-  for (var i=0; i<getCart().length; i++) {
-    if (getCart()[i].itemName === itemName) 
-    {search = getCart()[i]}
-  }
-  return search
-}
-function removeItem(item) {
-  var indexOfItem = cart.indexOf(item)
-  getCart().splice(indexOfItem,1)
-}
-  var item = searchCart(itemName)
-  if (item == removeItem(item)){
-  return item
-  }
-  return item ? removeItem(item) : notifyUserThereIsNoItemToRemove()
-}
-function notifyUserThereIsNoItemToRemove() {
-  return 'That item is not in your cart.'
-}
+
 
 
 function placeOrder(cardNumber) {
