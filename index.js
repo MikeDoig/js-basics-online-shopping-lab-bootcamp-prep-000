@@ -75,7 +75,7 @@ if (cardNumber === undefined) {
 else {
   return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
 }
-cart.splice(cart().length);
+cart.splice(1, cart().length);
 }
 
 
