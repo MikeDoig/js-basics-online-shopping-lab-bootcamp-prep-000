@@ -21,10 +21,10 @@ getCart().push(thing);
 }
 function fullCart() {
   var thingsInCart = 'In your cart, you have ';
-  if (getCart().length >= 1) {
+  if (getCart().length == 1) {
     thingsInCart = thingsInCart + `${getCart()[0].itemName} at $${getCart()[0].itemPrice}`;
   }
-  if (getCart().length >= 2) {
+  if (getCart().length > 1) {
     var otherThingsInCart = '';
     for (let i=1; i < getCart().length - 1; i++) {
     otherThingsInCart = otherThingsInCart + `, ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`;
