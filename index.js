@@ -89,6 +89,10 @@ function removeFromCart(itemName) {
   }
   return searchResult
 }
+function removeItemFromCart(itemToRemove) {
+  var indexOfItemToRemove = cart.indexOf(itemToRemove)
+  getCart().splice(indexOfItemToRemove,1)
+}
 
 }
 
