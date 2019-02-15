@@ -75,8 +75,8 @@ function removeItem(removal) {
   var id = cart.indexOf(removal)
   getCart().splice(id,1)
 }
-  var itemToRemove = searchCart(itemName)
-  if (itemToRemove == removeItem(itemToRemove)){}
+  var item = searchCart(itemName)
+  if (item == removeItem(item)){}
   return 'That item is not in your cart.'
 }
 
