@@ -63,7 +63,7 @@ function removeFromCart(item) {
   var search;
   for (let i=0; i<getCart().length; i++) {
     if (getCart()[i].item == item) {
-    search = getCart().splice(cart.indexOf(getCart()[i]),1);
+    search = getCart()[i];
   }
     else {
     search = 'That item is not in your cart.';
