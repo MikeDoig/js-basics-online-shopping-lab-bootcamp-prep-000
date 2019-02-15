@@ -85,8 +85,11 @@ function removeFromCart(itemName) {
 function notifyUserThereIsNoItemToRemove() {
   return 'That item is not in your cart.'
 }
-
+function removeItemFromCart(itemToRemove) {
+  var indexOfItemToRemove = cart.indexOf(itemToRemove)
+  getCart().splice(indexOfItemToRemove,1)
 }
+
 }
 
 
