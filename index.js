@@ -49,7 +49,7 @@ function total() {
 function searchCart(item) {
   var search;
   for (let i=0; i<getCart().length; i++) {
-    if (getCart) // working on this line
+    if (getCart().itemName ) 
   }
 }
 function removeFromCart(item) {
