@@ -70,7 +70,7 @@ function removeItem(removal) {
 
 function placeOrder(cardNumber) {
 if (cardNumber != cardNumber) {
-  return ''
+  return 'Sorry, we don\'t have a credit card on file for you.';
 }
 }
 
