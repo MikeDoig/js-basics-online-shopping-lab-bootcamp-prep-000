@@ -71,15 +71,12 @@ function removeFromCart(itemName) {
   }
   return search;
 }
-function notifyUserThereIsNoItemToRemove() {
-  return 'That item is not in your cart.'
-}
 function removeItem(itemToRemove) {
   var id = cart.indexOf(itemToRemove)
   getCart().splice(id,1)
 }
   var itemToRemove = searchCart(itemName)
-   (itemToRemove == removeItem(itemToRemove))
+  if (itemToRemove == removeItem(itemToRemove)){}
   return 'That item is not in your cart.'
 }
 
