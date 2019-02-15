@@ -61,7 +61,7 @@ function searchCart(item) {
   return search;
 }
 function removeFromCart(item) {
-
+return searchCart(item) ? 
 }
 
 
