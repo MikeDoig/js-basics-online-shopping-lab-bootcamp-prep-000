@@ -80,3 +80,13 @@ function placeOrder(cardNumber) {
 
 }
 
+
+function removeFromCart(itemName) {
+  
+}
+
+
+
+
+
+
