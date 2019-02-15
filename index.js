@@ -94,11 +94,8 @@ function removeItem(item) {
   return item
   }
   else {
-    return notifyUserThereIsNoItemToRemove()
+    return 'That item is not in your cart.'
   }
-}
-function notifyUserThereIsNoItemToRemove() {
-  return 'That item is not in your cart.'
 }
 
 
