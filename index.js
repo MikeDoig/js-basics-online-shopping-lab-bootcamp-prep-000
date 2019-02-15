@@ -47,43 +47,42 @@ function total() {
 
 
 
-function removeFromCart(item) {
-  function searchCart(item) {
-  var search;
-  for (let i=0; i<getCart().length; i++) {
-    if (getCart()[i].item == item) {
-    search = cart.indexOf(getCart()[i]);
-    return getCart().splice(search,1);
-  }
-    else {}
-    search = 'That item is not in your cart.';
-    return search;
-    
-  }
-  }
-}
-
-// function removeFromCart(itemName) {
-//   function searchCart(itemName) {
-//   var search
-//   for (var i=0; i<getCart().length; i++) {
-//     if (getCart()[i].itemName === itemName) {search = getCart()[i]}
+// function removeFromCart(item) {
+//   function searchCart(item) {
+//   var search;
+//   for (let i=0; i<getCart().length; i++) {
+//     if (getCart()[i].item == item) {
+//     search = cart.indexOf(getCart()[i]);
+//     return getCart().splice(search,1);
 //   }
-//   return search
+//     else {}
+//     search = 'That item is not in your cart.';
+//     return search;
+//     
+//   }
+//   }
 // }
-// function notifyUserThereIsNoItemToRemove() {
-//   return 'That item is not in your cart.'
-// }
-// function removeItem(itemToRemove) {
-//   var id = cart.indexOf(itemToRemove)
-//   getCart().splice(id,1)
-// }
-//   var itemToRemove = searchCart(itemName)
-//   // return itemToRemove ? removeItem(itemToRemove) : notifyUserThereIsNoItemToRemove()
-//   if (itemToRemove == removeItem(itemToRemove)){}
-//   else {}
-//   return notifyUserThereIsNoItemToRemove()
-// }
+
+function removeFromCart(itemName) {
+  function searchCart(itemName) {
+  var search;
+  for (var i=0; i<getCart().length; i++) {
+    if (getCart()[i].itemName === itemName) {search = getCart()[i]}
+  }
+  return search;
+}
+function notifyUserThereIsNoItemToRemove() {
+  return 'That item is not in your cart.'
+}
+function removeItem(itemToRemove) {
+  var id = cart.indexOf(itemToRemove)
+  getCart().splice(id,1)
+}
+  var itemToRemove = searchCart(itemName)
+  if (itemToRemove == removeItem(itemToRemove)){}
+  else {}
+  return notifyUserThereIsNoItemToRemove()
+}
 
 
 
