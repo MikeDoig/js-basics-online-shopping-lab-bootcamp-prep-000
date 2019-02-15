@@ -46,6 +46,12 @@ function total() {
   }
   return sum;
 }
+function searchCart(item) {
+  var search;
+  for (let i=0; i<getCart().length; i++) {
+    if (getCart) // working on this line
+  }
+}
 function removeFromCart(item) {
 delete cart[item];
 }
