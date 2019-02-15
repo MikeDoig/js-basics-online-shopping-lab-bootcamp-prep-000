@@ -91,7 +91,7 @@ function removeItemFromCart(itemToRemove) {
   getCart().splice(indexOfItemToRemove,1)
 }
   var itemToRemove = searchCart(item)
-  return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
+  return itemToRemove ? removeItemFromCart(item) : notifyUserThereIsNoItemToRemove()
 
 }
 
