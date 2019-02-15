@@ -25,15 +25,14 @@ function fullCart() {
     thingsInCart = thingsInCart + `${getCart()[0].itemName} at $${getCart()[0].itemPrice}`;
   }
   if (getCart().length >= 2) {
-    var otherThingsInCart = '';
+    var otherThingsInCart = ', ';
     for (let i=1; i < getCart().length - 1; i++) {
-    otherThingsInCart = otherThingsInCart + `, ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`;
+    otherThingsInCart = otherThingsInCart + `${getCart()[i].itemName} at $${getCart()[i].itemPrice}`;
   }
     thingsInCart = thingsInCart + `${otherThingsInCart}, and ${getCart()[getCart().length - 1].itemName} at $${getCart()[getCart().length - 1].itemPrice}`;
   }
   return `${thingsInCart}.`;
 }
-
 function viewCart() {
   if (cart.length === 0) {
     return 'Your shopping cart is empty.';
@@ -42,12 +41,6 @@ function viewCart() {
     return fullCart();
   }
 }
-  
-  // else if (cart.length > 1) {
-  //   return`In your cart, you have ${thing.itemName[i]} at $${thing.itemPrice[i]}, and ${thing.itemName[i + 1]} at $${thing.itemPrice[i + 1]}.`;
-  // }
-  
-
 function total() {
 
 }
