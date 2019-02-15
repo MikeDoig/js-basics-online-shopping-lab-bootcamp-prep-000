@@ -90,7 +90,12 @@ function removeItem(item) {
   getCart().splice(indexOfItem,1)
 }
   var item = searchCart(itemName)
-  return item ? removeItem(item) : notifyUserThereIsNoItemToRemove()
+  if (item == removeItem(item)){
+  return item
+  }
+  else {
+    return notifyUserThereIsNoItemToRemove()
+  }
 }
 function notifyUserThereIsNoItemToRemove() {
   return 'That item is not in your cart.'
