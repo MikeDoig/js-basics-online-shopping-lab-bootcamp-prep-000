@@ -79,7 +79,7 @@ function removeItem(itemToRemove) {
   getCart().splice(id,1)
 }
   var itemToRemove = searchCart(itemName)
-  if (itemToRemove == removeItem(itemToRemove)){}
+   (itemToRemove == removeItem(itemToRemove))
   return 'That item is not in your cart.'
 }
 
