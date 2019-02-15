@@ -25,7 +25,7 @@ function fullCart() {
     thingsInCart = thingsInCart + `${getCart()[0].itemName} at $${getCart()[0].itemPrice}`;
   }
   if (getCart().length >= 2) {
-    var otherThingsInCart = ', ';
+    var otherThingsInCart = ' ';
     for (let i=1; i < getCart().length - 1; i++) {
     otherThingsInCart = otherThingsInCart + `${getCart()[i].itemName} at $${getCart()[i].itemPrice}`;
   }
