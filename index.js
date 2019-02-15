@@ -46,6 +46,8 @@ function total() {
   }
   return sum;
 }
+
+
 function searchCart(item) {
   var search;
   for (let i=0; i<getCart().length; i++) {
@@ -58,8 +60,11 @@ function searchCart(item) {
   return search;
 }
 function removeFromCart(item) {
-delete cart[item];
+
 }
+
+
+
 
 function placeOrder(cardNumber) {
 
