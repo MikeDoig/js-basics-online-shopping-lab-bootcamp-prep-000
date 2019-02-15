@@ -82,7 +82,11 @@ function removeFromCart(itemName) {
   }
   return searchResult
 }
+function notifyUserThereIsNoItemToRemove() {
+  return 'That item is not in your cart.'
+}
 
+}
 }
 
 
