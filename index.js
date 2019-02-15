@@ -46,18 +46,7 @@ function total() {
 }
 
 
-// function searchCart(item) {
-//   var search;
-//   for (let i=0; i<getCart().length; i++) {
-//     if (getCart()[i].itemName == itemName) {
-//     search = getCart()[i];
-//   }
-//     else {
-//     search = 'That item is not in your cart.';
-//     }
-//   }
-//   return search;
-// }
+
 // function removeFromCart(item) {
 //   function searchCart(item) {
 //   var search;
