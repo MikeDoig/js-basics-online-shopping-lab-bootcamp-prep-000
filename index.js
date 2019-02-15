@@ -52,7 +52,7 @@ function searchCart(item) {
     if (getCart()[i].itemName == itemName);
     search = getCart()[i].itemName;
     else {
-      search = 
+    search = 'That item is not in your cart.';
     }
   }
   return search;
