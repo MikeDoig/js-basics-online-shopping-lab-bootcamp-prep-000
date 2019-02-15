@@ -63,7 +63,7 @@ function total() {
 function removeFromCart(item) {
   var search;
   for (let i=0; i<getCart().length; i++) {
-    if (getCart()[i].itemName == itemName) {
+    if (getCart()[i].item == item) {
     search = getCart().splice(cart.indexOf(getCart()[i]),1);
   }
     else {
