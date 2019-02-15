@@ -63,9 +63,9 @@ function total() {
 //   var search;
 //   for (let i=0; i<getCart().length; i++) {
 //     if (getCart()[i].item == item) {
-//     search = cart.indexOf(getCart()[i]);
-//     return getCart().splice(search,1);
+//     search = getCart()[i];
 //   }
+//    return search;
 //     else {
 //     search = 'That item is not in your cart.';
 //     return search;
