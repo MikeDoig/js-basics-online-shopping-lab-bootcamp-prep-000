@@ -44,6 +44,7 @@ function addingPrices() {
   for (let i=0; i < getCart().length; i++) {
     sum = sum + `${getCart()[i].itemPrice}`;
   }
+  return sum;
 }
 function total() {
 return addingPrices();
