@@ -75,12 +75,6 @@ function removeFromCart(item) {
 
 
 
-
-function placeOrder(cardNumber) {
-
-}
-
-
 function removeFromCart(itemName) {
   function searchCartForItemToRemove(itemName) {
   var searchResult
@@ -98,7 +92,9 @@ function removeItemFromCart(itemToRemove) {
 }
 
 
+function placeOrder(cardNumber) {
 
+}
 
 
 
